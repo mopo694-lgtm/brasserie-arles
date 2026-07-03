@@ -289,6 +289,26 @@ h2.center{ max-width: 640px; margin-left:auto; margin-right:auto; }
 .gallery-arrow-prev{ left:-24px; }
 .gallery-arrow-next{ right:-24px; }
 
+/* ---------- Reviews ---------- */
+.reviews-rating{ font-family: var(--serif); font-weight:500; color: var(--sage-dark); font-size:1.05rem; margin-top:-.4em; margin-bottom:2.6em; }
+.reviews-grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.review-card{
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px 22px;
+  display:flex;
+  flex-direction:column;
+}
+.review-stars{ color: var(--sage); letter-spacing:.1em; font-size:.85rem; margin-bottom:12px; }
+.review-quote{ font-size:.9rem; color: var(--ink-soft); flex:1; margin-bottom:14px; }
+.review-author{ font-family: var(--serif); font-weight:500; font-size:.92rem; color: var(--ink); margin:0; }
+
 /* ---------- Info list ---------- */
 .info-list{
   display:grid;
@@ -358,6 +378,7 @@ h2.center{ max-width: 640px; margin-left:auto; margin-right:auto; }
   .split-reverse .split-text{ order:2; }
   .gallery img{ width: 260px; height: 320px; }
   .split-photo img{ height: 440px; }
+  .reviews-grid{ grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 800px){
@@ -390,4 +411,5 @@ h2.center{ max-width: 640px; margin-left:auto; margin-right:auto; }
   .hero-actions .btn{ width:100%; }
   .info-list > div{ flex-direction:column; gap:4px; }
   .info-list dt{ width:auto; }
+  .reviews-grid{ grid-template-columns: 1fr; }
 }
