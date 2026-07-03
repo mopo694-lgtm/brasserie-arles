@@ -9,6 +9,7 @@
   --sage-light: #93a9a4;
   --line: #ddd4bd;
   --serif: "Fredoka", "Work Sans", sans-serif;
+  --brand-font: "Baloo 2", "Fredoka", sans-serif;
   --sans: "Work Sans", "Helvetica Neue", Arial, sans-serif;
   --container: 1140px;
   --radius: 2px;
@@ -99,7 +100,7 @@ h2.center{ max-width: 640px; margin-left:auto; margin-right:auto; }
 .site-header.is-scrolled .brand-mark-light{ display:none; }
 .site-header.is-scrolled .brand-mark-dark{ display:block; }
 .brand-text{ display:flex; flex-direction:column; line-height:1.15; }
-.brand-name{ font-family: var(--serif); font-size: 1.55rem; font-weight:600; letter-spacing:.01em; color:#fff; transition: color .3s ease; text-shadow: 0 1px 6px rgba(0,0,0,.35); }
+.brand-name{ font-family: var(--brand-font); font-size: 1.55rem; font-weight:600; letter-spacing:.01em; color:#fff; transition: color .3s ease; text-shadow: 0 1px 6px rgba(0,0,0,.35); }
 .site-header.is-scrolled .brand-name{ text-shadow:none; }
 .brand-place{ font-size:.78rem; letter-spacing:.24em; text-transform:uppercase; color: #cfe0da; transition: color .3s ease; }
 
@@ -163,6 +164,7 @@ h2.center{ max-width: 640px; margin-left:auto; margin-right:auto; }
 .hero-mark{ height:190px; width:auto; object-fit:contain; margin-bottom: 28px; filter: drop-shadow(0 2px 14px rgba(0,0,0,.4)); }
 .hero .eyebrow{ color: #dfe6e2; }
 .hero h1{
+  font-family: var(--brand-font);
   color:#fff;
   font-size: clamp(2.6rem, 6vw, 4.2rem);
   margin-bottom:.25em;
